@@ -20,15 +20,15 @@ import static org.inferred.freebuilder.processor.BuilderFactory.BUILDER_METHOD;
 import static org.inferred.freebuilder.processor.BuilderFactory.NEW_BUILDER_METHOD;
 import static org.inferred.freebuilder.processor.BuilderFactory.NO_ARGS_CONSTRUCTOR;
 
-import javax.lang.model.element.TypeElement;
+import com.google.common.base.Optional;
 
-import org.inferred.freebuilder.processor.util.testing.ModelRule;
+import org.inferred.testing.model.ModelRule;
 import org.junit.ClassRule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
-import com.google.common.base.Optional;
+import javax.lang.model.element.TypeElement;
 
 @RunWith(JUnit4.class)
 public class BuilderFactoryTest {

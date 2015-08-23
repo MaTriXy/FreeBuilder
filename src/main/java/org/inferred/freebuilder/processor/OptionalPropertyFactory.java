@@ -26,7 +26,7 @@ import javax.lang.model.util.SimpleTypeVisitor6;
 
 import org.inferred.freebuilder.processor.Metadata.Property;
 import org.inferred.freebuilder.processor.PropertyCodeGenerator.Config;
-import org.inferred.freebuilder.processor.util.SourceBuilder;
+import org.inferred.source.SourceBuilder;
 
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.base.Optional;

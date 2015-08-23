@@ -22,7 +22,7 @@ import static org.inferred.freebuilder.processor.Metadata.GET_CODE_GENERATOR;
 import static org.inferred.freebuilder.processor.Metadata.UnderrideLevel.ABSENT;
 import static org.inferred.freebuilder.processor.Metadata.UnderrideLevel.FINAL;
 import static org.inferred.freebuilder.processor.PropertyCodeGenerator.IS_TEMPLATE_REQUIRED_IN_CLEAR;
-import static org.inferred.freebuilder.processor.util.SourceBuilders.withIndent;
+import static org.inferred.source.SourceBuilders.withIndent;
 
 import java.io.Serializable;
 import java.util.Arrays;
@@ -36,8 +36,8 @@ import org.inferred.freebuilder.FreeBuilder;
 import org.inferred.freebuilder.processor.Metadata.Property;
 import org.inferred.freebuilder.processor.Metadata.StandardMethod;
 import org.inferred.freebuilder.processor.PropertyCodeGenerator.Type;
-import org.inferred.freebuilder.processor.util.SourceBuilder;
-import org.inferred.freebuilder.processor.util.TypeReference;
+import org.inferred.source.SourceBuilder;
+import org.inferred.source.TypeReference;
 
 import com.google.common.annotations.GwtCompatible;
 import com.google.common.annotations.VisibleForTesting;

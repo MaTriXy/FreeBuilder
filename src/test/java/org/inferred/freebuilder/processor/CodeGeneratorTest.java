@@ -16,29 +16,30 @@
 package org.inferred.freebuilder.processor;
 
 import static com.google.common.truth.Truth.assertThat;
-import static org.inferred.freebuilder.processor.GenericTypeElementImpl.newTopLevelGenericType;
-import static org.inferred.freebuilder.processor.util.ClassTypeImpl.newNestedClass;
-import static org.inferred.freebuilder.processor.util.ClassTypeImpl.newTopLevelClass;
-import static org.inferred.freebuilder.processor.util.PrimitiveTypeImpl.INT;
-import static org.inferred.freebuilder.processor.util.SourceLevel.JAVA_6;
-import static org.inferred.freebuilder.processor.util.SourceLevel.JAVA_7;
-
-import javax.lang.model.element.TypeElement;
-import javax.lang.model.type.TypeMirror;
-
-import org.inferred.freebuilder.processor.GenericTypeElementImpl.GenericTypeMirrorImpl;
-import org.inferred.freebuilder.processor.Metadata.Property;
-import org.inferred.freebuilder.processor.util.ClassTypeImpl;
-import org.inferred.freebuilder.processor.util.ClassTypeImpl.ClassElementImpl;
-import org.inferred.freebuilder.processor.util.SourceStringBuilder;
-import org.inferred.freebuilder.processor.util.TypeReference;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.JUnit4;
+import static org.inferred.source.SourceLevel.JAVA_6;
+import static org.inferred.source.SourceLevel.JAVA_7;
+import static org.inferred.testing.unit.ClassTypeImpl.newNestedClass;
+import static org.inferred.testing.unit.ClassTypeImpl.newTopLevelClass;
+import static org.inferred.testing.unit.GenericTypeElementImpl.newTopLevelGenericType;
+import static org.inferred.testing.unit.PrimitiveTypeImpl.INT;
 
 import com.google.common.base.Joiner;
 import com.google.common.base.Optional;
 import com.google.common.collect.ImmutableSet;
+
+import org.inferred.freebuilder.processor.Metadata.Property;
+import org.inferred.source.SourceStringBuilder;
+import org.inferred.source.TypeReference;
+import org.inferred.testing.unit.ClassTypeImpl;
+import org.inferred.testing.unit.GenericTypeElementImpl;
+import org.inferred.testing.unit.ClassTypeImpl.ClassElementImpl;
+import org.inferred.testing.unit.GenericTypeElementImpl.GenericTypeMirrorImpl;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.JUnit4;
+
+import javax.lang.model.element.TypeElement;
+import javax.lang.model.type.TypeMirror;
 
 @RunWith(JUnit4.class)
 public class CodeGeneratorTest {

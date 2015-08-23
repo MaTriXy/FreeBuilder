@@ -16,8 +16,8 @@
 package org.inferred.freebuilder.processor;
 
 import static javax.lang.model.util.ElementFilter.typesIn;
-import static org.inferred.freebuilder.processor.util.ModelUtils.findAnnotationMirror;
-import static org.inferred.freebuilder.processor.util.RoundEnvironments.annotatedElementsIn;
+import static org.inferred.source.ModelUtils.findAnnotationMirror;
+import static org.inferred.source.RoundEnvironments.annotatedElementsIn;
 
 import java.util.Set;
 
@@ -30,8 +30,8 @@ import javax.lang.model.element.TypeElement;
 import javax.tools.Diagnostic.Kind;
 
 import org.inferred.freebuilder.FreeBuilder;
-import org.inferred.freebuilder.processor.util.CompilationUnitWriter;
-import org.inferred.freebuilder.processor.util.SourceLevel;
+import org.inferred.source.CompilationUnitWriter;
+import org.inferred.source.SourceLevel;
 
 import com.google.auto.service.AutoService;
 import com.google.common.base.Throwables;

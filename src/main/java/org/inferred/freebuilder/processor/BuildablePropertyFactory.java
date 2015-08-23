@@ -18,7 +18,7 @@ package org.inferred.freebuilder.processor;
 import static com.google.common.collect.Iterables.any;
 import static com.google.common.collect.Iterables.tryFind;
 import static javax.lang.model.util.ElementFilter.typesIn;
-import static org.inferred.freebuilder.processor.util.ModelUtils.findAnnotationMirror;
+import static org.inferred.source.ModelUtils.findAnnotationMirror;
 
 import java.util.List;
 
@@ -34,7 +34,7 @@ import javax.lang.model.util.Types;
 
 import org.inferred.freebuilder.processor.Metadata.Property;
 import org.inferred.freebuilder.processor.PropertyCodeGenerator.Config;
-import org.inferred.freebuilder.processor.util.SourceBuilder;
+import org.inferred.source.SourceBuilder;
 
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.base.Optional;

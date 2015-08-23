@@ -15,7 +15,7 @@
  */
 package org.inferred.freebuilder.processor;
 
-import static org.inferred.freebuilder.processor.util.Shading.unshadedName;
+import static org.inferred.source.Shading.unshadedName;
 
 import javax.lang.model.type.DeclaredType;
 import javax.lang.model.type.TypeKind;

@@ -27,30 +27,30 @@ import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
-import java.util.Map;
-
-import javax.annotation.Generated;
-import javax.annotation.Nullable;
-import javax.lang.model.element.TypeElement;
+import com.google.common.annotations.GwtCompatible;
+import com.google.common.base.Function;
+import com.google.common.collect.ImmutableList;
+import com.google.common.collect.ImmutableMap;
 
 import org.inferred.freebuilder.processor.Analyser.CannotGenerateCodeException;
 import org.inferred.freebuilder.processor.Metadata.Property;
 import org.inferred.freebuilder.processor.Metadata.StandardMethod;
 import org.inferred.freebuilder.processor.Metadata.UnderrideLevel;
 import org.inferred.freebuilder.processor.PropertyCodeGenerator.Type;
-import org.inferred.freebuilder.processor.util.TypeReference;
-import org.inferred.freebuilder.processor.util.testing.FakeMessager;
-import org.inferred.freebuilder.processor.util.testing.ModelRule;
+import org.inferred.source.TypeReference;
+import org.inferred.testing.model.ModelRule;
+import org.inferred.testing.unit.FakeMessager;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
-import com.google.common.annotations.GwtCompatible;
-import com.google.common.base.Function;
-import com.google.common.collect.ImmutableList;
-import com.google.common.collect.ImmutableMap;
+import java.util.Map;
+
+import javax.annotation.Generated;
+import javax.annotation.Nullable;
+import javax.lang.model.element.TypeElement;
 
 /** Unit tests for {@link Analyser}. */
 @RunWith(JUnit4.class)

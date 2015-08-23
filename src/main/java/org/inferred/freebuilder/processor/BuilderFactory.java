@@ -25,7 +25,7 @@ import javax.lang.model.element.ExecutableElement;
 import javax.lang.model.element.Modifier;
 import javax.lang.model.element.TypeElement;
 
-import org.inferred.freebuilder.processor.util.SourceBuilder;
+import org.inferred.source.SourceBuilder;
 
 import com.google.common.base.Optional;
 import com.google.common.collect.ImmutableSet;

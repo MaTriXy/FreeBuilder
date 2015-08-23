@@ -23,7 +23,7 @@ import javax.annotation.Nullable;
 import javax.lang.model.element.TypeElement;
 import org.inferred.freebuilder.processor.BuilderFactory;
 import org.inferred.freebuilder.processor.Metadata;
-import org.inferred.freebuilder.processor.util.TypeReference;
+import org.inferred.source.TypeReference;
 
 /**
  * Auto-generated superclass of {@link Metadata.Builder},

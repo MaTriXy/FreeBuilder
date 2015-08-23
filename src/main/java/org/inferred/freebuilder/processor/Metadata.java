@@ -24,7 +24,7 @@ import javax.lang.model.element.PackageElement;
 import javax.lang.model.element.TypeElement;
 import javax.lang.model.type.TypeMirror;
 
-import org.inferred.freebuilder.processor.util.TypeReference;
+import org.inferred.source.TypeReference;
 
 import com.google.common.base.Function;
 import com.google.common.base.Optional;

@@ -28,10 +28,10 @@ import static javax.tools.Diagnostic.Kind.ERROR;
 import static javax.tools.Diagnostic.Kind.NOTE;
 import static org.inferred.freebuilder.processor.BuilderFactory.NO_ARGS_CONSTRUCTOR;
 import static org.inferred.freebuilder.processor.MethodFinder.methodsOn;
-import static org.inferred.freebuilder.processor.util.ModelUtils.findAnnotationMirror;
-import static org.inferred.freebuilder.processor.util.ModelUtils.findProperty;
-import static org.inferred.freebuilder.processor.util.ModelUtils.maybeAsTypeElement;
-import static org.inferred.freebuilder.processor.util.ModelUtils.maybeType;
+import static org.inferred.source.ModelUtils.findAnnotationMirror;
+import static org.inferred.source.ModelUtils.findProperty;
+import static org.inferred.source.ModelUtils.maybeAsTypeElement;
+import static org.inferred.source.ModelUtils.maybeType;
 
 import java.beans.Introspector;
 import java.io.Serializable;
@@ -69,9 +69,9 @@ import org.inferred.freebuilder.processor.Metadata.Property;
 import org.inferred.freebuilder.processor.Metadata.StandardMethod;
 import org.inferred.freebuilder.processor.Metadata.UnderrideLevel;
 import org.inferred.freebuilder.processor.PropertyCodeGenerator.Config;
-import org.inferred.freebuilder.processor.util.IsInvalidTypeVisitor;
-import org.inferred.freebuilder.processor.util.ModelUtils;
-import org.inferred.freebuilder.processor.util.TypeReference;
+import org.inferred.source.IsInvalidTypeVisitor;
+import org.inferred.source.ModelUtils;
+import org.inferred.source.TypeReference;
 
 import com.google.common.annotations.GwtCompatible;
 import com.google.common.base.Optional;

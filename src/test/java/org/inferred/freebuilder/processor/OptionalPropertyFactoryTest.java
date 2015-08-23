@@ -15,22 +15,22 @@
  */
 package org.inferred.freebuilder.processor;
 
-import javax.tools.JavaFileObject;
+import com.google.common.base.Optional;
+import com.google.common.base.Preconditions;
+import com.google.common.collect.ImmutableList;
+import com.google.common.testing.EqualsTester;
 
 import org.inferred.freebuilder.FreeBuilder;
-import org.inferred.freebuilder.processor.util.testing.BehaviorTester;
-import org.inferred.freebuilder.processor.util.testing.SourceBuilder;
-import org.inferred.freebuilder.processor.util.testing.TestBuilder;
+import org.inferred.testing.behavior.BehaviorTester;
+import org.inferred.testing.behavior.SourceBuilder;
+import org.inferred.testing.behavior.TestBuilder;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
-import com.google.common.base.Optional;
-import com.google.common.base.Preconditions;
-import com.google.common.collect.ImmutableList;
-import com.google.common.testing.EqualsTester;
+import javax.tools.JavaFileObject;
 
 /** Behavioral tests for {@code Optional<?>} properties. */
 @RunWith(JUnit4.class)

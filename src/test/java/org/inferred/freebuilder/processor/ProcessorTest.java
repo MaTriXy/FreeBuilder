@@ -15,6 +15,23 @@
  */
 package org.inferred.freebuilder.processor;
 
+import com.google.common.annotations.GwtCompatible;
+import com.google.common.testing.EqualsTester;
+import com.google.gwt.user.client.rpc.SerializationException;
+import com.google.gwt.user.server.rpc.RPC;
+
+import org.hamcrest.BaseMatcher;
+import org.hamcrest.Description;
+import org.inferred.freebuilder.FreeBuilder;
+import org.inferred.testing.behavior.BehaviorTester;
+import org.inferred.testing.behavior.SourceBuilder;
+import org.inferred.testing.behavior.TestBuilder;
+import org.junit.Rule;
+import org.junit.Test;
+import org.junit.rules.ExpectedException;
+import org.junit.runner.RunWith;
+import org.junit.runners.JUnit4;
+
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -26,23 +43,6 @@ import java.lang.reflect.Method;
 import java.util.List;
 
 import javax.tools.JavaFileObject;
-
-import org.hamcrest.BaseMatcher;
-import org.hamcrest.Description;
-import org.inferred.freebuilder.FreeBuilder;
-import org.inferred.freebuilder.processor.util.testing.BehaviorTester;
-import org.inferred.freebuilder.processor.util.testing.SourceBuilder;
-import org.inferred.freebuilder.processor.util.testing.TestBuilder;
-import org.junit.Rule;
-import org.junit.Test;
-import org.junit.rules.ExpectedException;
-import org.junit.runner.RunWith;
-import org.junit.runners.JUnit4;
-
-import com.google.common.annotations.GwtCompatible;
-import com.google.common.testing.EqualsTester;
-import com.google.gwt.user.client.rpc.SerializationException;
-import com.google.gwt.user.server.rpc.RPC;
 
 @RunWith(JUnit4.class)
 public class ProcessorTest {
